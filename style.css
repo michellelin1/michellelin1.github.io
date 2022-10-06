@@ -81,6 +81,7 @@ p, li {
 
 .card:hover{
     opacity: 0.75;
+    transform: scale(1.05);
 }
 
 .card a {
@@ -90,4 +91,8 @@ p, li {
 
 .card:hover a{
     color: black;
+}
+
+.center {
+    text-align:center;
 }

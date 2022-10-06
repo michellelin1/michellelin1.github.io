@@ -20,8 +20,8 @@
 <body>
   <nav class="navbar fixed-top navbar-expand-md navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#home">Michelle Lin</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSections" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#hello">Michelle Lin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSections" aria-controls="navbarSections" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSections">
@@ -41,6 +41,7 @@
           <li class="nav-item">
             <a class="nav-link" href="Lin_Michelle_resume.pdf">Resume</a>
           </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -51,8 +52,8 @@
     <h1 id="name">Michelle Lin</h1>
     <br>
     <p>I am passionate about computer science and am an aspiring software engineer.</p>
-    <a href="https://www.linkedin.com/in/michellelin1/" class="socials"><i class="bi bi-linkedin"></i></a>
-    <a href="https://github.com/michellelin1" class="socials"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/michellelin1/" class="socials" aria-label="LinkedIn link"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/michellelin1" class="socials" aria-label="github link"><i class="bi bi-github"></i></a>
   </div>
   <!-- about -->
   <div id="about" class="content container-fluid alt-section mt-2">
@@ -60,7 +61,7 @@
     <br>
     <div class="row align-items-start">
       <div class="offset-md-1 col-md-2 d-flex justify-content-center pb-3">
-        <img src="./img/profile_pic.jpg" class="rounded-circle" alt="picture of Michelle in a dress" width="250px">
+        <img src="./img/profile_pic.jpg" class="rounded-circle center" alt="picture of Michelle in a dress" width="250">
       </div>
       <div class="offset-md-1 col-md-7">
         <p>
@@ -82,8 +83,8 @@
     <h1 class="section-heading">Education</h1>
     <br>
     <div class="row">
-      <div class="col-md-1 offset-md-1 justify-content-center pb-3">
-        <center><img src="./img/uci.png" alt="uci logo" width="100px"></center>
+      <div class="col-md-1 offset-md-1 justify-content-center center pb-3">
+        <img src="./img/uci.png" alt="uci logo" width="100">
       </div>
       <div class="offset-md-1 col-md-4">
         <p>
@@ -123,9 +124,9 @@
   <div id="experience" class="content alt-section containter-fluid mt-2">
     <h1 class="section-heading mb-5"> Experience</h1>
 
-    <div class="row mb-3">
-      <div class="col-sm-2 offset-lg-1">
-        <center><img src="./img/deloitte.png" width="75px" alt="deloitte logo"></center>
+    <div class="row">
+      <div class="col-sm-2 offset-lg-1 center mb-2">
+        <img src="./img/deloitte.png" width="75" alt="deloitte logo">
       </div>
       <div class="col">
         <p><strong>
@@ -136,7 +137,7 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row mb-3">
       <div class="col-lg-8 offset-lg-3">
         <ul>
           <li> Advised a social media company in its acquisition of a smart home company in a structured case simulation </li>
@@ -146,9 +147,9 @@
       </div>
     </div>
 
-    <div class="row mb-3">
-      <div class="col-sm-2 offset-lg-1">
-        <center><img src="./img/wics.png" width="75px" alt="wics logo"></center>
+    <div class="row">
+      <div class="col-sm-2 offset-lg-1 center">
+        <img src="./img/wics.png" width="75" alt="wics logo">
       </div>
       <div class="col">
         <p><strong>
@@ -159,7 +160,7 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row mb-3">
       <div class="col-lg-8 offset-lg-3">
         <ul>
           <li>Establishing and maintaining relationships with 25+ company representatives from Amazon, Stripe, Cisco, Intel,
@@ -171,9 +172,9 @@
       </div>
     </div>
 
-    <div class="row mb-3">
-      <div class="col-sm-2 offset-lg-1">
-        <center><img src="./img/ctc.svg" width="75px" alt="ctc logo"></center>
+    <div class="row">
+      <div class="col-sm-2 offset-lg-1 center mb-2">
+        <img src="./img/ctc.svg" width="75" alt="ctc logo">
       </div>
       <div class="col">
         <p><strong>
@@ -184,7 +185,7 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row mb-3">
       <div class="col-lg-8 offset-lg-3">
         <ul>
           <li> Developing a web application using React JS, Bootstrap, and PostgreSQL for the non-profit organization, The Literacy Project, which aims to eliminated the literacy gap in rising 2nd graders in Los Angeles County </li>
@@ -193,7 +194,6 @@
         </ul>
       </div>
     </div>
-  </div>
   </div>
   <!-- projects -->
   <div id="projects" class="content container-fluid mt-2">
@@ -212,7 +212,9 @@
               COVID-19 pandemic. The app randomly assigning users social prompts and challenges designed to spark 
               conversation with their peers.
             </p>
-            <p></p>
+            <p>
+              <!-- <u>Technologies Used:</u> React, Firebase, and Bootstrap -->
+            </p>
           </div>
         </div>
       </div>
@@ -241,7 +243,11 @@
             <p class="card-title">
               <strong><a href="https://github.com/ctc-uci/the-literacy-project-frontend" class="stretched-link">The Literacy Project</a></strong>
             </p>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">
+              <em>The Literacy Project</em> is a non-profit based in Los Angeles aiming to eliminate the literacy gap in rising second graders.
+              This web app digitizes and aggregates their data making their process faster and allowing them to track program and student trends.
+            </p>
+            <p></p>
           </div>
         </div>
       </div>
@@ -252,7 +258,10 @@
             <p class="card-title">
               <strong><a href="https://github.com/ctc-uci/abound-food-care-frontend" class="stretched-link"> Abound Food Care </a></strong>
             </p>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">
+              This web app for <em>Abound Food Care</em> allows their admin to track and manage its volunteers and volunteers can easily sign up for events.
+              Admins can now filter by volunteers' availabilities, interests, certifications, location, etc. and easily approve volunteer hours, creating a better experience for both parties.
+            </p>
           </div>
         </div>
       </div>
